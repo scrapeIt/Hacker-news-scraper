@@ -1,0 +1,17 @@
+
+### To get all posts by a user 
+http://api.thriftdb.com/api.hnsearch.com/items/_search?%20\%20sortby=create_ts%20dsc%20&filter[fields][username]=kaushikfrnd&pretty_print=true&filter[fields][type]=submission
+
+### To get user details 
+http://api.thriftdb.com/api.hnsearch.com/users/kaushikfrnd
+
+### to get front page hn/news 
+http://api.thriftdb.com/api.hnsearch.com/items/_search?limit=30&sortby=product%28points,pow%282,div%28div%28ms%28create_ts,NOW%29,3600000%29,72%29%29%29%20desc&pretty_print=true
+
+###get comments of a post
+http://api.thriftdb.com/api.hnsearch.com/items/_search?filter[fields][discussion.sigid]=3101876-9e153&filter[fields][type]=comment&pretty_print=true
+or 
+http://api.thriftdb.com/api.hnsearch.com/items/_search?filter[fields][type]=comment&pretty_print=true&filter[fields][discussion.sigid]=3101876-9e153
+
+###get post details 
+http://api.thriftdb.com/api.hnsearch.com/items/3101876-9e153
